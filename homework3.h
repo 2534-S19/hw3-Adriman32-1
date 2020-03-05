@@ -1,10 +1,9 @@
 /*
  * homework3.h
  *
- *  Created on:
- *      Author:
+ *  Created on: 3/2/2020
+ *      Author: Adrian Ruvalcaba
  */
-
 
 
 #ifndef HOMEWORK3_H_
@@ -20,7 +19,8 @@ void changeBoosterpackLED(unsigned int count);
 bool fsmBoosterpackButtonS1(unsigned int buttonhistory);
 
 
-// TODO: Define any constants that are local to homework.c using #define
+// Define any constants that are local to homework.c using #define
+#define NUM_LIGHTS 4;
 
 
 #endif /* HOMEWORK3_H_ */

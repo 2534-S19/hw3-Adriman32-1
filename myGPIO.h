@@ -1,13 +1,28 @@
 /*
  * myGPIO.h
  *
- *  Created on:
- *      Author:
+ *  Created on: 3/2/2
+ *      Author: Adrian Ruvalcaba
  *
  */
 
 #ifndef MYGPIO_H_
 #define MYGPIO_H_
+// LaunchPad Define
+#define LAUNCH_S1 BIT1
+#define LAUNCH_S2 BIT4
+#define LAUNCH_LED1 BIT0
+#define LAUNCH_LED2R BIT0
+#define LAUNCH_LED2G BIT1
+#define LAUNCH_LED2B BIT2
+// Boosterpack Define
+#define BOOST_S1 BIT1
+#define BOOST_S2 BIT5
+#define BOOST_LEDR BIT6
+#define BOOST_LEDG BIT4
+#define BOOST_LEDB BIT6
+
+#define PRESSED 0
 
 // This function initializes the peripherals used in the program.
 void initGPIO();
@@ -47,8 +62,5 @@ void turnOff_BoosterpackLEDGreen();
 void turnOn_BoosterpackLEDBlue();
 // This function turns off Boosterpack Blue LED.
 void turnOff_BoosterpackLEDBlue();
-
-// TODO: Define any constants that are local to myGPIO.c using #define
-
 
 #endif /* MYGPIO_H_ */
